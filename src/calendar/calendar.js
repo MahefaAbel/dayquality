@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Calendar from 'react-calendar';
 import './style.css';
-import { withRouter } from "react-router-dom";
  
 export default class CalendarView extends Component {
   

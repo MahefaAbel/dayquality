@@ -6,15 +6,17 @@ export default class Engine {
     const diffDays = this.getDiffsDate(year, mounth, day);
     const moduloted = diffDays % 28
     const anaranaAndro = this.getDateNameMalagasy(moduloted)
-    return `${diffDays} ${moduloted} ${anaranaAndro}`
+    // return `${diffDays} ${moduloted} ${anaranaAndro}`
+    return `${anaranaAndro}`
   }
 
   public static getDiffsDate(year: number, mounth: number, day: number) {
-    const dateWantedMoment = moment(`${day}/${mounth}/${year}`,'D/M/YYYY');
+      const mounthInt = parseInt(`${mounth}`) + 1   // On ajout 1 car mounth est [0 -> 11]
+    const dateWantedMoment = moment(`${day}/${mounthInt}/${year}`,'D/M/YYYY');
 
     const dateReferenceFirstStr = this.getFirstDateReference()  // Exemple : 2019-07-22
     const dateReferenceMoment = moment(`${dateReferenceFirstStr}`,'YYYY-M-D');
-
+    
     const diffDays = dateWantedMoment.diff(dateReferenceMoment, 'days');
 
     return diffDays

@@ -1,7 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
-import App from '../App'
+import { Route, BrowserRouter as Router } from 'react-router-dom'
 import DetailView from '../detail/detail'
 import CalendarView from '../calendar/calendar'
 
