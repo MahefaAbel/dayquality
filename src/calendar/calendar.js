@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 import './style.css';
  
 export default class CalendarView extends Component {
@@ -16,11 +17,13 @@ export default class CalendarView extends Component {
  
   render() {
     return (
-      <div>
-        <Calendar
-          onChange={this.onChange}
-          value={this.state.date}
-        />
+      <div id="calendarContainer">
+        <div id="calendarWidthContainer">
+          <Calendar
+            onChange={this.onChange}
+            value={this.state.date}
+          />
+        </div>
       </div>
     );
   }

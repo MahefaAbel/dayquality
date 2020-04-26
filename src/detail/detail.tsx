@@ -14,10 +14,12 @@ export default class DetailView extends Component<Props, State> {
     const malagasyName = Engine.convertToMalagasyName(year, mounth, day);
 
     return (
-      <div>
-        <h2>{`Detail pour ${this.props.match.params.year}-${this.props.match.params.mounth}-${this.props.match.params.day}`}</h2>
+      <div id="container">
         <div>
-          {`Anarana : ${malagasyName}`}
+          <h2>{`Detail pour ${this.props.match.params.year}-${this.props.match.params.mounth}-${this.props.match.params.day}`}</h2>
+          <div>
+            <span id="detail-name">{`Anarana : ${malagasyName}`}</span>
+          </div>
         </div>
       </div>
     );
