@@ -1,12 +1,41 @@
+import moment from "moment"
 
 export default class Engine {
 
   public static convertToMalagasyName(year: number, mounth: number, day: number) {
-    return 
+    const diffDays = this.getDiffsDate(year, mounth, day);
+    const moduloted = diffDays % 28
+    const anaranaAndro = this.getDateNameMalagasy(moduloted)
+    return `${diffDays} ${moduloted} ${anaranaAndro}`
   }
 
-  public static fdgdf(year: number, mounth: number, day: number) {
-    return 
+  public static getDiffsDate(year: number, mounth: number, day: number) {
+    const dateWantedMoment = moment(`${day}/${mounth}/${year}`,'D/M/YYYY');
+
+    const dateReferenceFirstStr = this.getFirstDateReference()  // Exemple : 2019-07-22
+    const dateReferenceMoment = moment(`${dateReferenceFirstStr}`,'YYYY-M-D');
+
+    const diffDays = dateWantedMoment.diff(dateReferenceMoment, 'days');
+
+    return diffDays
+  }
+
+  public static getFirstDateReference() {
+    let result = null;
+    const keys = Object.keys(AnaranandroMalagasy)
+    if(keys.length > 0){
+        result = keys[0]
+    }
+    return result
+  }
+
+  public static getDateNameMalagasy(modulo: number) {
+    let result = null;
+    const values = Object.values(AnaranandroMalagasy)
+    if(values.length > 0){
+        result = values[modulo]
+    }
+    return result
   }
 
 }
