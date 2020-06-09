@@ -1,8 +1,10 @@
-# dayquality
+# DayQuality
 Day Quality
+http://dayquality.mahefa.company/
 
+## Developpement :
 Framework : React.js
 
-1. `npm install`
-
-Url Prod : http://dayquality.mahefa.company/
+### Installation
+1. `git clone https://github.com/MahefaAbel/dayquality.git`
+2. `npm install`
