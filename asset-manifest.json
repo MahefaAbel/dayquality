@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/dayquality/static/css/main.cbc27643.chunk.css",
+    "main.js": "/dayquality/static/js/main.da7dfc56.chunk.js",
+    "main.js.map": "/dayquality/static/js/main.da7dfc56.chunk.js.map",
+    "runtime-main.js": "/dayquality/static/js/runtime-main.c1be4126.js",
+    "runtime-main.js.map": "/dayquality/static/js/runtime-main.c1be4126.js.map",
+    "static/css/2.8dbe6964.chunk.css": "/dayquality/static/css/2.8dbe6964.chunk.css",
+    "static/js/2.314819ac.chunk.js": "/dayquality/static/js/2.314819ac.chunk.js",
+    "static/js/2.314819ac.chunk.js.map": "/dayquality/static/js/2.314819ac.chunk.js.map",
+    "index.html": "/dayquality/index.html",
+    "precache-manifest.92fe27392bfe074fa9f5236c8b8f58f4.js": "/dayquality/precache-manifest.92fe27392bfe074fa9f5236c8b8f58f4.js",
+    "service-worker.js": "/dayquality/service-worker.js",
+    "static/css/2.8dbe6964.chunk.css.map": "/dayquality/static/css/2.8dbe6964.chunk.css.map",
+    "static/css/main.cbc27643.chunk.css.map": "/dayquality/static/css/main.cbc27643.chunk.css.map",
+    "static/js/2.314819ac.chunk.js.LICENSE.txt": "/dayquality/static/js/2.314819ac.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c1be4126.js",
+    "static/css/2.8dbe6964.chunk.css",
+    "static/js/2.314819ac.chunk.js",
+    "static/css/main.cbc27643.chunk.css",
+    "static/js/main.da7dfc56.chunk.js"
+  ]
+}
