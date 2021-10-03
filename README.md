@@ -1,6 +1,5 @@
 # DayQuality
 Day Quality <br/>
-http://dayquality.mahefa.company/
 
 ## Developpement :
 Framework : React.js
